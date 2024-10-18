@@ -45,7 +45,7 @@ body {
 .full-img-container {
     height: 350px;
     overflow: hidden;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 /*l'image est complètement visible dans sa largeur*/
@@ -62,7 +62,7 @@ en colonne sur la version mobile
 .small {
     flex: 1;
     width: 30%;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 /*INFOS PRODUIT A DROITE*/
