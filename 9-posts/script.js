@@ -42,5 +42,7 @@ posts.forEach((item) => {
         `;
     // console.log(article);
 
-    //
+    // Ajout des articles sur la page avec innerHTML
+    // On ajoute un + pour afficher tout les articles, sinon le innerHTML ne reverrait que le dernier article.
+    postsContainer.innerHTML += article;
 });
