@@ -43,20 +43,20 @@ form.addEventListener('submit', (evt) => {
     //* On vérifie si les données entrées sont correctes
     // Le .length permet de compter le nombre de caractères
     if (prenomValue.length < 2 || prenomValue.length > 10) {
-        console.log('erreur');
+        // console.log('erreur prenom');
         // On supprime la calsse "invisible" afin d'afficher le message d'erreur
         prenom.nextElementSibling.classList.remove('invisible');
     } else if (nomValue.length < 3 || nomValue.length > 15) {
-        console.log('erreur');
+        // console.log('erreur nom');
         nom.nextElementSibling.classList.remove('invisible');
     } else if (messageValue.length < 2 || prenomValue.length > 10) {
-        console.log('erreur');
+        // console.log('erreur message');
         message.nextElementSibling.classList.remove('invisible');
     } else if (emailValue === '') {
-        console.log('erreur');
+        // console.log('erreur email');
         email.nextElementSibling.classList.remove('invisible');
     } else {
-        console.log('OK');
+        // console.log('Succès');
         // On modifie le titre si le formulaire a bien été envoyé
         titre.innerText = 'Votre message a bien été envoyé !';
 
