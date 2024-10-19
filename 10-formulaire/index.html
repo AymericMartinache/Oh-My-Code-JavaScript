@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>Formulaire en cours</title>
-</head>
-<body>
-    
-    <div class="container">
-        <div class="banniere-titre">
-            <h1 id="titre">
-                Contactez-nous dès maintenant
-            </h1>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <title>📋 Formulaire</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="banniere-titre">
+                <h1 id="titre">Contactez-nous dès maintenant</h1>
+            </div>
 
-        <form id="formulaire">  
+            <form id="formulaire">
                 <div class="form-item">
                     <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" placeholder="Votre prénom">
-                    <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
+                    <input type="text" id="prenom" placeholder="Votre prénom" />
+                    <div class="error invisible">
+                        Ce champ doit contenir entre deux et dix caractères
+                    </div>
                 </div>
                 <div class="form-item">
                     <label for="nom">Nom</label>
-                    <input type="text" id="nom" placeholder="Votre nom">
-                    <div class="error invisible">Ce champ doit contenir entre trois et quinze caractères</div>
+                    <input type="text" id="nom" placeholder="Votre nom" />
+                    <div class="error invisible">
+                        Ce champ doit contenir entre trois et quinze caractères
+                    </div>
                 </div>
                 <div class="form-item">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Votre e-mail">
+                    <input type="email" id="email" placeholder="Votre e-mail" />
+                    <div class="error invisible">
+                        Ce champ ne peut pas être vide
+                    </div>
                 </div>
                 <div class="form-item">
                     <label for="message">Votre message</label>
-                    <textarea id="message" placeholder="Votre message"></textarea>
-                    <div class="error invisible">Ce champ doit contenir entre dix et cent caractères</div>
+                    <textarea
+                        id="message"
+                        placeholder="Votre message"
+                    ></textarea>
+                    <div class="error invisible">
+                        Ce champ doit contenir entre dix et cent caractères
+                    </div>
                 </div>
-                <button id="btn" type="submit">Envoyer</button> 
+                <button id="btn" type="submit">Envoyer</button>
             </form>
-                
+        </div>
 
-    </div>
-   
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
-
