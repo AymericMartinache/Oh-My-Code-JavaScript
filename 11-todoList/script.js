@@ -17,7 +17,7 @@ form.addEventListener('submit', (evt) => {
     const todoValue = todo.value;
     // console.log(todoValue);
 
-    // Je créé la div qui contiendra une tâche
+    //* Je créé la div qui contiendra la tâche
     let item = `
         <div class="item">
             <p>${todoValue}</p>
@@ -30,9 +30,21 @@ form.addEventListener('submit', (evt) => {
         </div>
     `;
 
-    // Je l'ajoute dans la liste des tâches
+    //* Je l'ajoute dans la liste des tâches
     listItems.innerHTML += item;
 
-    // Je vide l'input après le submit
+    //* Je vide l'input après le submit
     todo.value = '';
+
+    //* Suppression de la tâche
+    const btnDelete = document.querySelectorAll('.btn-delete');
+    btnDelete.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            // console.log('Delete');
+            // On supprime la tâche qui est llélément parent du bouton
+            btn.parentElement.remove();
+        });
+    });
+
+    //
 });
