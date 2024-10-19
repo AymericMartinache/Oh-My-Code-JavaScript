@@ -1,6 +1,9 @@
 console.log('Hi ! I am JS !');
 
 //* Je selectionne et je stocke
+
+// Titre
+const titre = document.getElementById('titre');
 // Formulaire
 const form = document.getElementById('formulaire');
 
@@ -54,5 +57,10 @@ form.addEventListener('submit', (evt) => {
         email.nextElementSibling.classList.remove('invisible');
     } else {
         console.log('OK');
+        // On modifie le titre si le formulaire a bien été envoyé
+        titre.innerText = 'Votre message a bien été envoyé !';
+
+        // On retire le formulaire
+        form.remove();
     }
 });
