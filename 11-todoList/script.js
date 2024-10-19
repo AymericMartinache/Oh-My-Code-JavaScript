@@ -33,9 +33,6 @@ form.addEventListener('submit', (evt) => {
     //* Je l'ajoute dans la liste des tâches
     listItems.innerHTML += item;
 
-    //* Je vide l'input après le submit
-    todo.value = '';
-
     //* Suppression de la tâche
     const btnDelete = document.querySelectorAll('.btn-delete');
     btnDelete.forEach((btn) => {
@@ -46,5 +43,12 @@ form.addEventListener('submit', (evt) => {
         });
     });
 
-    //
+    //* Archivage de la tâche
+    const btnArchive = document.querySelectorAll('.btn-archive');
+    btnArchive.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            console.log('Archive');
+            btn.parentElement.classList.toggle('done');
+        });
+    });
 });
