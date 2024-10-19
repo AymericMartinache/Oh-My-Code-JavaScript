@@ -10,6 +10,9 @@ const todo = document.getElementById('todo');
 // Liste des tâches
 const listItems = document.querySelector('.list-items');
 
+// Message d'erreur
+const error = document.querySelector('.error');
+
 //* Je récupère les données de l'input
 form.addEventListener('submit', (evt) => {
     evt.preventDefault();
@@ -17,8 +20,11 @@ form.addEventListener('submit', (evt) => {
     const todoValue = todo.value;
     // console.log(todoValue);
 
-    //* Je créé la div qui contiendra la tâche
-    let item = `
+    if (todoValue !== '') {
+        //* Si l'input n'est pas vide
+
+        // Je créé la div qui contiendra la tâche
+        let item = `
         <div class="item">
             <p>${todoValue}</p>
             <button class="btn-delete">
@@ -30,8 +36,18 @@ form.addEventListener('submit', (evt) => {
         </div>
     `;
 
-    //* Je l'ajoute dans la liste des tâches
-    listItems.innerHTML += item;
+        // Je l'ajoute dans la liste des tâches
+        listItems.innerHTML += item;
+
+        // Je réinitialise le formulaire
+        form.reset();
+    } else {
+        //* Si l'input est vide, j'affiche le message d'erreur pendant 3s
+        error.classList.remove('invisible');
+        setTimeout(() => {
+            error.classList.add('invisible');
+        }, 3000);
+    }
 
     //* Suppression de la tâche
     const btnDelete = document.querySelectorAll('.btn-delete');
