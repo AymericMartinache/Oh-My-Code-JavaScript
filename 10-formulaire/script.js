@@ -4,6 +4,7 @@ console.log('Hi ! I am JS !');
 
 // Titre
 const titre = document.getElementById('titre');
+
 // Formulaire
 const form = document.getElementById('formulaire');
 
