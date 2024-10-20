@@ -34,11 +34,11 @@ posts.forEach((item) => {
 
     // Création d'une div en utilisant les template strings
     const article = `
-         <div class="post">
-                    <div class="post-titre">${item.titre}</div>
-                    <div class="post-extrait">${item.extrait}</div>
-                    <div class="post-hashtag">${item.hashtag}</div>
-                </div>
+            <div class="post">
+                <div class="post-titre">${item.titre}</div>
+                <div class="post-extrait">${item.extrait}</div>
+                <div class="post-hashtag">${item.hashtag}</div>
+            </div>
         `;
     // console.log(article);
 
