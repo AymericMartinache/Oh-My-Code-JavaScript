@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62, 5%;
+}
+
+body {
+    font-size: 1.4rem; /* 14px */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2337;
+}
+
+.taskList {
+    margin-top: 5rem;
+}
+
+.container h2 {
+    color: greenyellow;
+}
+
+.taskList li {
+    list-style-type: none;
+}
